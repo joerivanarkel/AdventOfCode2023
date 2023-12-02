@@ -1,4 +1,4 @@
-import strutils, sequtils, math, tables
+import strutils, math, tables
 
 proc readFile(filename: string): seq[string] =
     var lines = newSeq[string]()
@@ -44,14 +44,13 @@ proc combineNumbers(numbers: seq[seq[int]]): seq[int] =
     return combinedNumbers
 
 # execution starts here
-let file = readFile("input.txt")
-let parsedText = parseTextNumbers(file)
-for line in parsedText:
-    echo line
-let numbers = getNumbers(parsedText)
-let firstAndLast = getFirstAndLast(numbers)
-let combinedNumbers = combineNumbers(firstAndLast)
+let sum = "input.txt"
+    .readFile()
+    .parseTextNumbers()
+    .getNumbers()
+    .getFirstAndLast()
+    .combineNumbers()
+    .sum()
 
-let sum = combinedNumbers.sum()
 echo sum
 
