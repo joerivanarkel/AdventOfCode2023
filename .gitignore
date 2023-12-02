@@ -1,0 +1,6 @@
+# Nim
+nimcache/
+nimble.lock
+*.nim.js
+*.nim.js.map
+*.exe
