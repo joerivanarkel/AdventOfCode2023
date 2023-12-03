@@ -10,6 +10,11 @@ nimble.lock
 *.fsproj.lock.json
 *.fsproj.nuget.g.props
 *.fsproj.nuget.g.targets
-bin/
+02/bin/
 obj/
 
+# Dart
+.dart_tool/
+.packages
+.pub/
+/build/
