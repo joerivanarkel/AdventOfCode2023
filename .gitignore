@@ -4,3 +4,12 @@ nimble.lock
 *.nim.js
 *.nim.js.map
 *.exe
+
+# F#
+*.fsproj.user
+*.fsproj.lock.json
+*.fsproj.nuget.g.props
+*.fsproj.nuget.g.targets
+bin/
+obj/
+
